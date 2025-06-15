@@ -87,6 +87,7 @@
             background: linear-gradient(45deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: inline-block; /* Ensure it works on inline elements */
         }
     </style>
 </head>
@@ -97,13 +98,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand font-weight-bold text-gradient" href="#home">
-                <i class="fas fa-lotus mr-2"></i>Align & Elevate
+                <i class="fas fa-lotus me-2" aria-label="Align & Elevate Logo"></i>Align & Elevate
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
@@ -112,7 +113,7 @@
                     <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -127,17 +128,17 @@
                     <p class="lead mb-4">Discover the perfect balance of mind, body, and spirit through our
                         comprehensive wellness programs designed to align and elevate your life.</p>
                     <div class="mb-4">
-                        <button class="btn btn-light btn-lg mr-3 mb-2">Start Your Journey</button>
+                        <button class="btn btn-light btn-lg me-3 mb-2">Start Your Journey</button>
                         <button class="btn btn-outline-light btn-lg mb-2">Learn More</button>
                     </div>
                     <div class="d-flex align-items-center">
-                        <div class="mr-4">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <small class="ml-2">500+ Happy Clients</small>
+                        <div class="me-4">
+                            <i class="fas fa-star text-warning" aria-label="Star rating"></i>
+                            <i class="fas fa-star text-warning" aria-label="Star rating"></i>
+                            <i class="fas fa-star text-warning" aria-label="Star rating"></i>
+                            <i class="fas fa-star text-warning" aria-label="Star rating"></i>
+                            <i class="fas fa-star text-warning" aria-label="Star rating"></i>
+                            <small class="ms-2">500+ Happy Clients</small>
                         </div>
                     </div>
                 </div>
@@ -164,7 +165,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6 mb-3">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-heart text-danger feature-icon mr-3"></i>
+                                <i class="fas fa-heart text-danger feature-icon me-3" aria-label="Holistic Approach"></i>
                                 <div>
                                     <h5>Holistic Approach</h5>
                                     <p class="mb-0">Complete wellness for mind, body & spirit</p>
@@ -173,7 +174,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-users text-success feature-icon mr-3"></i>
+                                <i class="fas fa-users text-success feature-icon me-3" aria-label="Expert Team"></i>
                                 <div>
                                     <h5>Expert Team</h5>
                                     <p class="mb-0">Certified wellness professionals</p>
@@ -182,7 +183,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-leaf text-success feature-icon mr-3"></i>
+                                <i class="fas fa-leaf text-success feature-icon me-3" aria-label="Natural Methods"></i>
                                 <div>
                                     <h5>Natural Methods</h5>
                                     <p class="mb-0">Organic and sustainable practices</p>
@@ -191,7 +192,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-award text-warning feature-icon mr-3"></i>
+                                <i class="fas fa-award text-warning feature-icon me-3" aria-label="Proven Results"></i>
                                 <div>
                                     <h5>Proven Results</h5>
                                     <p class="mb-0">Thousands of success stories</p>
@@ -215,7 +216,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-spa text-primary feature-icon"></i>
+                            <i class="fas fa-spa text-primary feature-icon" aria-label="Spa & Relaxation"></i>
                             <h4 class="card-title">Spa & Relaxation</h4>
                             <p class="card-text">Rejuvenate your body and mind with our luxurious spa treatments and
                                 relaxation therapies.</p>
@@ -227,7 +228,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-dumbbell text-success feature-icon"></i>
+                            <i class="fas fa-dumbbell text-success feature-icon" aria-label="Fitness Training"></i>
                             <h4 class="card-title">Fitness Training</h4>
                             <p class="card-text">Personalized fitness programs designed to strengthen your body and
                                 boost your energy levels.</p>
@@ -239,7 +240,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-brain text-info feature-icon"></i>
+                            <i class="fas fa-brain text-info feature-icon" aria-label="Mental Wellness"></i>
                             <h4 class="card-title">Mental Wellness</h4>
                             <p class="card-text">Meditation, mindfulness, and mental health support to achieve inner
                                 peace and clarity.</p>
@@ -251,7 +252,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-utensils text-warning feature-icon"></i>
+                            <i class="fas fa-utensils text-warning feature-icon" aria-label="Nutrition Counseling"></i>
                             <h4 class="card-title">Nutrition Counseling</h4>
                             <p class="card-text">Expert nutritional guidance to fuel your body with the right foods for
                                 optimal health.</p>
@@ -263,7 +264,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-moon text-purple feature-icon" style="color: #6f42c1;"></i>
+                            <i class="fas fa-moon text-purple feature-icon" style="color: #6f42c1;" aria-label="Sleep Therapy"></i>
                             <h4 class="card-title">Sleep Therapy</h4>
                             <p class="card-text">Improve your sleep quality with our specialized sleep therapy and
                                 wellness programs.</p>
@@ -275,7 +276,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 border-0 shadow card-hover">
                         <div class="card-body text-center p-4">
-                            <i class="fas fa-hands-helping text-danger feature-icon"></i>
+                            <i class="fas fa-hands-helping text-danger feature-icon" aria-label="Life Coaching"></i>
                             <h4 class="card-title">Life Coaching</h4>
                             <p class="card-text">Personal development and life coaching to help you achieve your goals
                                 and dreams.</p>
@@ -356,14 +357,14 @@
                     <div class="testimonial-card rounded p-4 h-100">
                         <div class="text-center mb-3">
                             <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43"
-                                class="rounded-circle mb-3" width="80" height="80" alt="Client">
+                                class="rounded-circle mb-3" width="80" height="80" alt="Client Sarah Johnson">
                             <h5>Sarah Johnson</h5>
                             <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
                             </div>
                         </div>
                         <p class="text-center">"The 30-day reset program completely changed my life. I feel more
@@ -374,14 +375,14 @@
                     <div class="testimonial-card rounded p-4 h-100">
                         <div class="text-center mb-3">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop"
-                                class="rounded-circle mb-3" width="80" height="80" alt="Client">
+                                class="rounded-circle mb-3" width="80" height="80" alt="Client Mike Chen">
                             <h5>Mike Chen</h5>
                             <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
                             </div>
                         </div>
                         <p class="text-center">"The fitness challenge pushed me beyond my limits. I've never felt
@@ -392,14 +393,14 @@
                     <div class="testimonial-card rounded p-4 h-100">
                         <div class="text-center mb-3">
                             <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop"
-                                class="rounded-circle mb-3" width="80" height="80" alt="Client">
+                                class="rounded-circle mb-3" width="80" height="80" alt="Client Emma Davis">
                             <h5>Emma Davis</h5>
                             <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
+                                <i class="fas fa-star" aria-label="Star rating"></i>
                             </div>
                         </div>
                         <p class="text-center">"The mindfulness journey helped me find inner peace and manage stress
@@ -415,23 +416,23 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <i class="fas fa-users feature-icon text-primary mb-3"></i>
+                    <i class="fas fa-users feature-icon text-primary mb-3" aria-label="Happy Clients"></i>
                     <div class="stats-counter text-primary" data-count="1000">1000+</div>
                     <h5>Happy Clients</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <i class="fas fa-trophy feature-icon text-success mb-3"></i>
-                    <div class="stats-counter text-success" data-count="15">800+</div>
+                    <i class="fas fa-trophy feature-icon text-success mb-3" aria-label="Awards Won"></i>
+                    <div class="stats-counter text-success" data-count="800">800+</div>
                     <h5>Awards Won</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <i class="fas fa-calendar feature-icon text-warning mb-3"></i>
-                    <div class="stats-counter text-warning" data-count="5">900+</div>
+                    <i class="fas fa-calendar feature-icon text-warning mb-3" aria-label="Years Experience"></i>
+                    <div class="stats-counter text-warning" data-count="900">900+</div>
                     <h5>Years Experience</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <i class="fas fa-heart feature-icon text-danger mb-3"></i>
-                    <div class="stats-counter text-danger" data-count="98">5000+</div>
+                    <i class="fas fa-heart feature-icon text-danger mb-3" aria-label="Success Rate"></i>
+                    <div class="stats-counter text-danger" data-count="5000">5000+</div>
                     <h5>Success Rate %</h5>
                 </div>
             </div>
@@ -449,7 +450,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop"
-                            class="card-img-top" alt="Gallery 1">
+                            class="card-img-top" alt="Spa & Relaxation">
                         <div class="card-body">
                             <h5 class="card-title">Spa & Relaxation</h5>
                             <p class="card-text">Luxurious spa treatments for ultimate relaxation</p>
@@ -459,7 +460,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
-                            class="card-img-top" alt="Gallery 2">
+                            class="card-img-top" alt="Fitness Training">
                         <div class="card-body">
                             <h5 class="card-title">Fitness Training</h5>
                             <p class="card-text">State-of-the-art fitness equipment and training</p>
@@ -469,7 +470,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
-                            class="card-img-top" alt="Gallery 3">
+                            class="card-img-top" alt="Meditation Spaces">
                         <div class="card-body">
                             <h5 class="card-title">Meditation Spaces</h5>
                             <p class="card-text">Peaceful environments for mindfulness practice</p>
@@ -479,7 +480,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop"
-                            class="card-img-top" alt="Gallery 4">
+                            class="card-img-top" alt="Healthy Nutrition">
                         <div class="card-body">
                             <h5 class="card-title">Healthy Nutrition</h5>
                             <p class="card-text">Fresh, organic ingredients for optimal nutrition</p>
@@ -489,7 +490,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://i.pinimg.com/736x/01/54/4a/01544a757880400e8aab5caf20e9b4d3.jpg"
-                            class="card-img-top" alt="Gallery 5">
+                            class="card-img-top" alt="Yoga & Wellness">
                         <div class="card-body">
                             <h5 class="card-title">Yoga & Wellness</h5>
                             <p class="card-text">Holistic yoga practices for mind-body harmony</p>
@@ -499,7 +500,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card border-0 shadow card-hover">
                         <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop"
-                            class="card-img-top" alt="Gallery 6">
+                            class="card-img-top" alt="Life Coaching">
                         <div class="card-body">
                             <h5 class="card-title">Life Coaching</h5>
                             <p class="card-text">Personal development and goal achievement</p>
@@ -521,21 +522,21 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="card border-0 shadow-lg">
                         <div class="card-body p-5">
-                            <form>
+                            <form action="/submit-contact" method="POST">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">First Name</label>
-                                        <input type="text" class="form-control form-control-lg">
+                                        <input type="text" class="form-control form-control-lg" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">Last Name</label>
-                                        <input type="text" class="form-control form-control-lg">
+                                        <input type="text" class="form-control form-control-lg" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">Email</label>
-                                        <input type="email" class="form-control form-control-lg">
+                                        <input type="email" class="form-control form-control-lg" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">Phone</label>
@@ -544,8 +545,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Service Interest</label>
-                                    <select class="form-control form-control-lg">
-                                        <option>Select a Service</option>
+                                    <select class="form-control form-control-lg" required>
+                                        <option value="">Select a Service</option>
                                         <option>30-Day Reset Program</option>
                                         <option>90-Day Fitness Challenge</option>
                                         <option>Mindfulness Journey</option>
@@ -556,7 +557,7 @@
                                 <div class="mb-4">
                                     <label class="form-label">Message</label>
                                     <textarea class="form-control" rows="5"
-                                        placeholder="Tell us about your wellness goals..."></textarea>
+                                        placeholder="Tell us about your wellness goals..." required></textarea>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-gradient btn-lg px-5">Send Message</button>
@@ -568,17 +569,17 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-4 text-center mb-4">
-                    <i class="fas fa-map-marker-alt feature-icon text-primary"></i>
+                    <i class="fas fa-map-marker-alt feature-icon text-primary" aria-label="Location"></i>
                     <h5>Visit Us</h5>
                     <p>123 Wellness Street<br>Health City, HC 12345</p>
                 </div>
                 <div class="col-lg-4 text-center mb-4">
-                    <i class="fas fa-phone feature-icon text-success"></i>
+                    <i class="fas fa-phone feature-icon text-success" aria-label="Phone"></i>
                     <h5>Call Us</h5>
                     <p>+1 (555) 123-4567<br>Mon-Fri 9AM-6PM</p>
                 </div>
                 <div class="col-lg-4 text-center mb-4">
-                    <i class="fas fa-envelope feature-icon text-info"></i>
+                    <i class="fas fa-envelope feature-icon text-info" aria-label="Email"></i>
                     <h5>Email Us</h5>
                     <p>info@alignelevate.com<br>support@alignelevate.com</p>
                 </div>
@@ -592,7 +593,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <h5 class="text-gradient mb-3">
-                        <i class="fas fa-lotus me-2"></i>Align & Elevate
+                        <i class="fas fa-lotus me-2" aria-label="Align & Elevate Logo"></i>Align & Elevate
                     </h5>
                     <p>Your partner in holistic wellness, dedicated to transforming lives through balance and
                         empowerment.</p>
@@ -609,10 +610,10 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <h5 class="mb-3">Connect</h5>
                     <div>
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="https://facebook.com" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://instagram.com" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://twitter.com" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://linkedin.com" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -621,6 +622,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 
 </body>
 
